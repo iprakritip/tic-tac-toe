@@ -1,0 +1,30 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+:root{
+    --cell-size:100px;
+    --mark-size: calc(var(var(--cell-size)* .8));
+}
+body{
+    margin: 0;
+  /* background: linear-gradient(to right, #18bc9c, #0ea580); */
+  background-color: rgb(32, 31, 31);
+}
+.board{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 5px;
+    color: #0ea580;
+}
+.cell{
+    width: var(--cell-size);
+    height: var(--cell-size);
+    background-color: rgb(243, 243, 243);
+    /* border: 2px solid rgb(88, 83, 83,0.8); */
+}
